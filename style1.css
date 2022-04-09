@@ -1,0 +1,180 @@
+body{
+    font-family: 'Roboto Condensed','Noto Sans TC', sans-serif;
+    margin: 0; /* 讓 div 與網頁邊緣無距離 */
+}
+
+span{
+    font-size: 2.8rem;
+}
+
+/*
+====================
+切版技巧之flex
+====================
+*/
+
+.first_block{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    background-color: cornflowerblue;
+    justify-content: space-between;   
+    align-items: flex-end;
+}
+
+.square{
+    display: flex; /* block */
+    height: 50px;
+    width: 50px;
+    border: 1px solid yellow;
+    background-color: thistle;
+    border-width: 3px;
+    justify-content: center;
+    align-items: center;
+}
+
+.three{
+    align-self: center;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.four{
+    align-self: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/*
+====================
+多個 Block (並排項目)
+====================
+*/
+
+.second_block{
+    height: 500px;
+    width: 100%;
+    background-color:rgb(216, 214, 214);
+    margin-top: 20px;
+    border: 2px solid dimgray;
+}
+
+.top_block{
+    height: 50%; /* height : 250px */
+    border-bottom: 2px solid dimgray;
+    display: block;
+    text-align: center; /* 將 text-align 調整即可水平居中 */
+    line-height: 250px; /* 將 line-height 調整為和 height 相同即可垂直居中 */
+}
+
+.bottom_block{
+    height: 50%;
+    display: flex;
+    justify-content: center; /* 內部項目水平居中對齊 */
+    align-items: center; /* 內部項目垂直居中對齊 */
+}
+
+.box{
+    font-weight: 600;
+    font-size: 2rem;
+    height: 100px;
+    width: 350px;
+    background-color:rgb(140, 189, 230);
+    border: 1px solid slateblue;
+}
+
+.inline{
+    display: inline-block;
+    text-align: center; /* 將 text-align 調整即可水平居中 */
+    line-height: 100px; /* 將 line-height 調整為和 height 相同即可垂直居中 */
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+/*
+====================
+單個 Block (單個項目)
+====================
+*/
+
+.third_block{
+    height: 300px;
+    width: 100%;
+    background-color:rgba(183, 183, 231, 0.4);
+    margin-top: 20px;
+    border: 2px solid dimgray;
+}
+
+.top_block_new{
+    height: 50%; /* height : 150px */
+    border-bottom: 2px solid dimgray;
+    display: block;
+    text-align: center;
+    line-height: 150px;
+}
+
+.center{
+    display: inline-block; /* 此處必須設定為 inline-block，不能使用 block */
+    text-align: center;
+    line-height: 100px;
+}
+
+.center_flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*
+====================
+排版技巧之定位模式 (Position)
+====================
+*/
+
+.fourth_block{
+    height: 200px;
+    width: 50%;
+    background-color:rgb(216, 214, 214);
+    margin-top: 20px;
+    border: 2px solid dimgray;
+    position: relative; /* 如果這裡沒先設置 position，當後面 .abs 的 position : absolute ， 會以整個 body 當基準點移動*/
+}
+
+.pos_block{
+    width: 250px;
+    height:100px;
+    background-color: rgb(250, 148, 129);
+    border: 1px solid rgb(204, 65, 40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+.abs{
+    position: absolute;
+    top: 50px;
+    left: 150px;
+}
+
+.rel{
+    position: relative;
+    bottom: -20px;
+    left: 60px;
+}
+
+/*
+    詳情可參考這裡 :
+    排版技巧 inline-block => https://docs.google.com/presentation/d/1RKqUDT9wNVWHZ93k-O8Ka1SQM14aWwOgnb-2Bcou5ro/edit?usp=sharing
+    排版技巧 flex => https://docs.google.com/presentation/d/1Lckd3c2TVD8FQcLjPuedNrwK1SgXyhOqq2GJ1MbVvYc/edit?usp=sharing
+    排版技巧之定位模式 => https://docs.google.com/presentation/d/1wP8HICAF4XM-HeYNcgO0WaFCAtxR8bBaBjQIV8Kp00o/edit?usp=sharing
+
+    彭彭學院教學課程 => https://training.pada-x.com/
+
+    CSS 5種垂直置中方法 => https://wcc723.github.io/css/2015/01/16/css-magic/
+*/

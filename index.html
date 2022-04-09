@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>
+            Testing
+        </title>
+        <link rel="stylesheet" href="./style1.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comforter&family=Noto+Sans+TC:wght@700&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <span>切版技巧之 flex</span>
+        <section>
+            <div class="first_block">
+                <div class="square">
+                    One
+                </div>
+                <div class="square">
+                    Two
+                </div>
+                <div class="square three">
+                    Three
+                </div>
+                <div class="square four">
+                    Four
+                </div>
+                <div class="square">
+                    Five
+                </div>
+                <div class="square">
+                    Six
+                </div>
+            </div>
+        </section>
+
+        <span>* 多個 Block (並排項目)*</span><br/>
+        <span>Inline-Block 置中(text-align、line-height) / Flex 置中(justify-content、align-items)</span>
+        <section>
+            <div class="second_block">
+                <div class="top_block">
+                    <div class="box inline">inline-block</div>
+                    <div class="box inline">inline-block</div>
+                </div>
+                <div class="bottom_block">
+                    <div class="box flex">inline-block</div>
+                    <div class="box flex">inline-block</div>
+                </div>
+            </div>
+        </section>
+
+        <span>* 單個 Block (單個項目)*</span><br/>
+        <span>Block 置中(text-align、line-height) / Flex 置中(justify-content、align-items)</span>
+        <section>
+            <div class="third_block">
+                <div class="top_block_new">                   
+                    <div class="box center">Block</div>
+                </div>
+                <div class="bottom_block">
+                    <div class="box center_flex">Block</div>
+                </div>
+            </div>
+        </section>
+
+        <span>排版技巧之定位模式 (Position)</span><br/>
+        <section>
+            <span>position : absolute</span>
+            <div class="fourth_block">
+                <div class="pos_block abs">
+                    Absolute<br/>
+                    top : 50px<br/>
+                    left : 150px<br/>  
+                </div>
+            </div>
+
+            <span>position : relative</span>
+            <div class="fourth_block">
+                <div class="pos_block rel">
+                    Relative<br/>
+                    bottom : -20px<br/>
+                    left : 60px<br/>  
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
+
